@@ -1,9 +1,9 @@
-import mongoose, { Schema, model } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const cartItemSchema = new Schema(
     {
         productId: {
-            type: mongoose.Schema.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Product",
             required: true
         },
