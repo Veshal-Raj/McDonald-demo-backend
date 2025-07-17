@@ -3,8 +3,9 @@ import cors from "cors";
 import morgan from "morgan";
 import dotenv from 'dotenv';
 dotenv.config();
+
 import apiRouter from "./src/routes/index.js";
-import initalizeDatabase from "./config.js";
+import initalizeDatabase from "./src/config/index.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
